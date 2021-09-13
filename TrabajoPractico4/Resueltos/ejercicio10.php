@@ -11,7 +11,7 @@
 function leerParteEntera($valor, $posicion)
 {
     $divisor = pow(10, $posicion);
-    return ($valor % $divisor) / pow(10, $posicion - 1);
+    return (int)(($valor % $divisor) / pow(10, $posicion - 1));
 }
 
 /**
@@ -47,9 +47,9 @@ function encriptador($valor)
 {
     // se lee el valor en determinada posicion
     $valor1 = leerParteEntera($valor, 1);
-    $valor2 = leerParteEntera($valor - ($valor1), 2);
-    $valor3 = leerParteEntera($valor - ($valor1) - ($valor2 * 10), 3); // condicionar porq minimo tiene q ser 10, 100 etc etc
-    $valor4 = leerParteEntera($valor - ($valor1) - ($valor2 * 10) - ($valor3 * 100), 4);
+    $valor2 = leerParteEntera($valor, 2);
+    $valor3 = leerParteEntera($valor, 3);
+    $valor4 = leerParteEntera($valor, 4);
 
     // se encriptan los valores
     $valor1 = encriptarEntero($valor1);
@@ -67,9 +67,9 @@ function desencriptador($valor)
 {
     // se lee el valor en determinada posicion
     $valor1 = leerParteEntera($valor, 1);
-    $valor2 = leerParteEntera($valor - ($valor1), 2);
-    $valor3 = leerParteEntera($valor - ($valor1) - ($valor2 * 10), 3);
-    $valor4 = leerParteEntera($valor - ($valor1) - ($valor2 * 10) - ($valor3 * 100), 4);
+    $valor2 = leerParteEntera($valor, 2);
+    $valor3 = leerParteEntera($valor, 3);
+    $valor4 = leerParteEntera($valor, 4);
 
     // se desencripta cada valor
     $valor1 = desencriptarEntero($valor1);
