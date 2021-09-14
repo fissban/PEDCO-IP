@@ -11,3 +11,7 @@ Ejercicios resueltos que se piden durante el cursado de <b>'Introduccion a la pr
 
 ## Observaciones
 - Trabajo Practico 3 y 4 se ejecutan por consola usando el interprete de PHP
+
+## Plugin recomendados
+- [PHP intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+
