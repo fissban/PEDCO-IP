@@ -10,8 +10,9 @@ Ejercicios resueltos que se piden durante el cursado de <b>'Introduccion a la pr
   * Resueltos -> _Contiene el/los archivos PHP con las soluciones._
 
 ## Observaciones
-- Trabajo Practico 3 y 4 se ejecutan por consola usando el interprete de PHP
+- Trabajo Practico 3, 4 y 5 se ejecutan por consola usando el interprete de PHP
 
 ## Plugin recomendados
 - [PHP intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- [PHP parameter-hint](https://marketplace.visualstudio.com/items?itemName=robertgr991.php-parameter-hint)
 
